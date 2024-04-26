@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 3%;
+    text-shadow: 3px 2px 4px rgb(134, 28, 63);
+}
+
+.score-section{
+    position: relative;  
+}
+
+.score{
+    width: 170px;
+    height: 68px;
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(134, 28, 63);
+    border-radius: 2rem;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    
+}
+.player{
+    position: absolute;
+    font-size: 1.5rem;
+    left: 30%;
+    top: 10%;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgb(134, 28, 63);
+    transform: translateX(-50%);
+}
+.computer{
+    position: absolute;
+    font-size: 1.5rem;
+    right: 15%;
+    top: 10%;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgb(134, 28, 63);
+    transform: translateX(-50%);
+}
+.result{
+    font-size: 3rem;
+    font-weight: 550;
+    text-shadow: 2px 2px 5px rgb(134, 28, 63);
+}
+#action,
+#winner {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.choices {
+    padding: 0;
+    margin-left:auto; 
+    margin-right: 10rem;
+    text-align: center;
+}  
+.choice{
+    display: inline-block;
+    height: 9rem;
+    width: 6rem;
+    margin:auto 4.5rem ;  
+    position: relative;   
+}
+
+
+
+
+@media (max-width: 896px) {
+    .player{
+        left: 20%; 
+    }
+    .computer{
+        right: 1.5%;
+    }
+}
+@media (max-width: 667px) {
+    .player{
+        font-size: 1rem;
+        left: 20%; 
+    }
+    .computer{
+        left: 80%;
+        font-size: 1rem;
+    }
+}
+
