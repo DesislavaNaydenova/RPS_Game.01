@@ -16,7 +16,10 @@ h1 {
 }
 
 .score-section{
-    position: relative;  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
 .score{
@@ -33,20 +36,16 @@ h1 {
 .player{
     position: absolute;
     font-size: 1.5rem;
-    left: 30%;
-    top: 10%;
     font-weight: 600;
     text-shadow: 2px 2px 5px rgb(134, 28, 63);
-    transform: translateX(-50%);
-}
+    left: 20%;}
+
 .computer{
     position: absolute;
     font-size: 1.5rem;
-    right: 15%;
-    top: 10%;
     font-weight: 600;
     text-shadow: 2px 2px 5px rgb(134, 28, 63);
-    transform: translateX(-50%);
+    right: 20%; 
 }
 .result{
     font-size: 3rem;
@@ -90,10 +89,11 @@ h1 {
     font-weight: 600;
     box-shadow: 2px 3px 5px rgb(134, 28, 63);
     cursor: pointer; 
+    margin: 10px;
 }
 .button:hover{
     box-shadow: 3px 4px 5px rgb(102, 13, 43);
-    background-color: rgb(191, 71, 91);
+    background-color: rgb(206, 100, 118);
 }
 
 
