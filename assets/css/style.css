@@ -60,16 +60,20 @@ h1 {
 }
 .choices {
     padding: 0;
-    margin-left:auto; 
-    margin-right: 10rem;
     text-align: center;
+    cursor: pointer;
+    background: none;
+    border: none;
 }  
 .choice{
     display: inline-block;
     height: 9rem;
     width: 6rem;
     margin:auto 4.5rem ;  
-    position: relative;   
+    position: relative;  
+}
+#player{
+    transform: rotateY(180deg);    
 }
 
 
