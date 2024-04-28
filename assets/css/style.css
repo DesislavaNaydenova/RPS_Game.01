@@ -64,17 +64,38 @@ h1 {
     cursor: pointer;
     background: none;
     border: none;
+    
 }  
-.choice{
-    display: inline-block;
-    height: 9rem;
-    width: 6rem;
-    margin:auto 4.5rem ;  
-    position: relative;  
+#player,
+#computer{
+    display: inline-block;   
+    margin:auto 2rem ;  
+    position: relative; 
+    height: 250px; 
 }
 #player{
     transform: rotateY(180deg);    
 }
+.choice-buttons{     
+    border: none;
+    display: contents;
+}
+.button{
+    width: 130px;
+    height: 50px;
+    background-color: rgb(206, 119, 133);
+    font-size: 1.5rem;
+    border: none;
+    border-radius:2rem;
+    font-weight: 600;
+    box-shadow: 2px 3px 5px rgb(134, 28, 63);
+    cursor: pointer; 
+}
+.button:hover{
+    box-shadow: 3px 4px 5px rgb(102, 13, 43);
+    background-color: rgb(191, 71, 91);
+}
+
 
 
 
