@@ -38,14 +38,14 @@ h1 {
     font-size: 1.5rem;
     font-weight: 600;
     text-shadow: 2px 2px 5px rgb(134, 28, 63);
-    left: 20%;}
+    left: 30%;}
 
 .computer{
     position: absolute;
     font-size: 1.5rem;
     font-weight: 600;
     text-shadow: 2px 2px 5px rgb(134, 28, 63);
-    right: 20%; 
+    right: 30%; 
 }
 .result{
     font-size: 3rem;
@@ -60,7 +60,6 @@ h1 {
 .choices {
     padding: 0;
     text-align: center;
-    cursor: pointer;
     background: none;
     border: none;
     
@@ -70,7 +69,6 @@ h1 {
     display: inline-block;   
     margin:auto 2rem ;  
     position: relative; 
-    height: 250px; 
 }
 #player{
     transform: rotateY(180deg);    
@@ -96,19 +94,45 @@ h1 {
     background-color: rgb(206, 100, 118);
 }
 
-
-
-
-
-@media (max-width: 896px) {
+@media (max-width: 1024px) {
     .player{
         left: 20%; 
     }
     .computer{
-        right: 1.5%;
+        right: 20%;
+    }
+}
+
+
+
+@media (max-width: 770px) {
+    h1 {
+        font-size: 3rem;
+        margin: 2%;
+    }
+    .choices img{
+        height: 200px;
+    }
+    .player{
+        left: 10%; 
+    }
+    .computer{
+        right: 10%;
+    }
+    .button {
+        width: 120px;
+        height: 40px;
+    }
+    .result {
+        font-size: 2rem;
+        font-weight: 500;
     }
 }
 @media (max-width: 667px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
     .player{
         font-size: 1rem;
         left: 20%; 
@@ -116,6 +140,22 @@ h1 {
     .computer{
         left: 80%;
         font-size: 1rem;
+    }
+}
+@media (max-width: 426px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .score {
+        width: 100px;
+        height: 55px;
+        font-size: 2rem;
+    }
+    .player{
+        left: 5%; 
+    }
+    .computer{
+        left: 75%;
     }
 }
 
