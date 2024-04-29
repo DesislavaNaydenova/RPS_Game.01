@@ -31,11 +31,15 @@ let computerMove = getComputerMove();
 function compareMoves(userInput, computerMove) {    
     let action = document.getElementById("action");
     let winner = document.getElementById("winner"); 
+
+    let capUserInput = userInput.charAt(0).toUpperCase() + userInput.slice(1);
+    let capComputerMove = computerMove.charAt(0).toUpperCase() + computerMove.slice(1);
+
     if(userInput === computerMove){
-        action.textContent = `${userInput} is the same as ${computerMove}`;
+        action.textContent = `${capUserInput} is the same as ${capComputerMove}`;
         winner.textContent = "It's a TIE !"
     } else if (userInput === "rock" && computerMove === "paper"){
-        action.textContent = `${computerMove} covers ${userInput}`;
+        action.textContent = `${capComputerMove} covers ${capUserInput}`;
         winner.textContent = "Computer wins!"
 
     }
