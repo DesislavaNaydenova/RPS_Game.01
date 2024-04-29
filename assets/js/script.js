@@ -9,6 +9,7 @@ function getUserInput() {
             userInput = button.id;
             let computerMove = getComputerMove();
             compareMoves(userInput, computerMove);
+            changeImg(userInput, computerMove);
         })
     }
  };
@@ -21,10 +22,6 @@ function getComputerMove() {
     let computerMove = computerOptions[randomChoice];
     return computerMove;
 };
-
-let computerMove = getComputerMove();
-
-
 
 
 // Function to compare
@@ -77,6 +74,13 @@ function incrementScore(winner) {
         cScore.textContent = parseInt(cScore.textContent) +1;
     };
 };
+
+// Cahnges the images to show the player's and computer's choice better to the user
+// Credit https://github.com/developedbyed/rock-paper-scissor/blob/master/app.js
+function changeImg(userInput, computerMove){
+    document.getElementById("player").src =`assets/images/${userInput}.png`;
+    document.getElementById("computer").src =`assets/images/${computerMove}.png`;
+}
 
 
 // End the game when one of the players get 20 points  
