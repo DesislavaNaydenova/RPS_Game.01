@@ -11,7 +11,7 @@ body {
 
 h1 {
     font-size: 4rem;
-    margin: 3%;
+    margin: 1%;
     text-shadow: 3px 2px 4px rgb(134, 28, 63);
 }
 
@@ -54,8 +54,8 @@ h1 {
 }
 #action,
 #winner {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .choices {
     padding: 0;
