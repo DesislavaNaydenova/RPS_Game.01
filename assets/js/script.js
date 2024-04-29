@@ -22,7 +22,11 @@ function compareMoves(user_choice, computer_choice) {
     return winner;
   }
 
+
+// Increment scor depending on the winner
 function incrementScore() {}
-  
+
+
+// End the game when one of the players get 20 points  
 function checkGameEnd() {}
   
