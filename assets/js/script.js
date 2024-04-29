@@ -8,8 +8,7 @@ function getUserInput() {
         button.addEventListener("click", function(){
             userInput = button.id;
             let computerMove = getComputerMove();
-            console.log(userInput);
-            console.log(computerMove, "is the comp")
+            compareMoves(userInput, computerMove);
         })
     }
  };
@@ -29,11 +28,20 @@ let computerMove = getComputerMove();
 
 
 // Function to compare
-function compareMoves(user_choice, computer_choice) {    
-    // if human = rock and comp = paper
-    //    winner = human
-    winner = "human"
+function compareMoves(userInput, computerMove) {    
+    let action = document.getElementById("action");
+    let winner = document.getElementById("winner"); 
+    if(userInput === computerMove){
+        action.textContent = `${userInput} is the same as ${computerMove}`;
+        winner.textContent = "It's a TIE !"
+    } else if (userInput === "rock" && computerMove === "paper"){
+        action.textContent = `${computerMove} covers ${userInput}`;
+        winner.textContent = "Computer wins!"
+
+    }
+    return action;
     return winner;
+    
   }
 
 
@@ -47,5 +55,6 @@ function checkGameEnd() {}
 getUserInput();
 getComputerMove();
 console.log(computerMove);
+compareMoves(userInput, computerMove)
 
   
