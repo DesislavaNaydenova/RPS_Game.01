@@ -70,8 +70,14 @@ function incrementScore(winner) {
 
     if( winner === "Player wins!"){
         pScore.textContent = parseInt(pScore.textContent) +1;
+        if(pScore.textContent >= 20){
+            checkGameEnd("Player");
+        }
     }else if (winner === "Computer wins!"){
         cScore.textContent = parseInt(cScore.textContent) +1;
+        if ( cScore.textContent >= 20){
+            checkGameEnd("Computer")
+        }
     };
 };
 
@@ -80,11 +86,17 @@ function incrementScore(winner) {
 function changeImg(userInput, computerMove){
     document.getElementById("player").src =`assets/images/${userInput}.png`;
     document.getElementById("computer").src =`assets/images/${computerMove}.png`;
+    
 }
 
 
 // End the game when one of the players get 20 points  
-function checkGameEnd() {}
+function checkGameEnd(winner) {
+    document.getElementById("action").textContent = `${winner} got 20 points!`;
+    document.getElementById("winner").textContent = `Pick a hand to start a new game!`;
+    document.getElementById("player-score").textContent = "0";
+    document.getElementById("computer-score").textContent = "0";
+}
 
 getUserInput();
 getComputerMove();
