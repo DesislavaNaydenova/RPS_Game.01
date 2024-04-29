@@ -2,16 +2,30 @@
 
 // Function to get user input
 function getUserInput() {
-    let userChoice = ;
-    return user_choice;
-  }
+    let userInput = "";
+    let buttons = document.querySelectorAll(".button");
+    for (let button of buttons){
+        button.addEventListener("click", function(){
+            userInput = button.id;
+            let computerMove = getComputerMove();
+            console.log(userInput);
+            console.log(computerMove, "is the comp")
+        })
+    }
+ };
 
 
 // Function to get computer move
 function getComputerMove() {
-    computer_choice = "paper";  // todo: randomize computer move
-    return computer_choice;
-  }
+    let computerOptions = ["rock", "paper", "scissors"];
+    let randomChoice = Math.floor(Math.random()*3);
+    let computerMove = computerOptions[randomChoice];
+    return computerMove;
+};
+
+let computerMove = getComputerMove();
+
+
 
 
 // Function to compare
@@ -29,4 +43,9 @@ function incrementScore() {}
 
 // End the game when one of the players get 20 points  
 function checkGameEnd() {}
+
+getUserInput();
+getComputerMove();
+console.log(computerMove);
+
   
