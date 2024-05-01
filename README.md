@@ -51,12 +51,8 @@ Rock Paper Scissors is a game, that almost everybody knows. This aplication lets
 ![Lighthouse results](assets/images/lighthouse.png)
 
 ### Bugs
-* Found and fixed the following mistakes:
-    - ![CSS mistake](assets/images/css_mistake.png)
 
-    - ![JS mistake](assets/images/js_mistake.png)
-
-
+No bugs were found.
 
 ### Validator Testing
 
@@ -104,7 +100,9 @@ The live link can be found here: [RPS_Game.01](https://desislavanaydenova.github
 ### Content
 
 - The [Love Maths](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/234519d86b76411aa181e76a55dabe70/) project tutorials wee used to develop this site.
-- Design and developing technicks are taken by [YouTube](https://www.youtube.com/watch?v=jaVNP3nIAv0)
+- Some ideas are taken by [YouTube freeCodeCamp](https://www.youtube.com/watch?v=jaVNP3nIAv0)
+- Some ideas are taken by [YouTube developedbyed](https://www.youtube.com/watch?v=jaVNP3nIAv0)
+
 ### Media
 
-- The graphics are from [Pinterest](https://www.pinterest.de/).
+- The graphics are from [GitHub , developedbyed](https://github.com/developedbyed/rock-paper-scissor/tree/master/assets).
