@@ -15,7 +15,7 @@ h1 {
     text-shadow: 3px 2px 4px rgb(134, 28, 63);
 }
 
-.score-section{
+.score-div{
     position: relative;
     display: flex;
     justify-content: center;
