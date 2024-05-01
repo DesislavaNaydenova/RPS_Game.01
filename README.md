@@ -1,39 +1,89 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# RPS_Game
 
-Welcome,
+Rock Paper Scissors is a game, that almost everybody knows. This aplication lets the user play the game agains the computer. It gives the user tha chance to choose between the three possibilities and implements this choice with the one of the computer. It's totally a game of luck.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Screenshot overview](assets/images/screenshot_generator.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Features
 
-## Codeanywhere Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Existing Features
 
-`python3 -m http.server`
+* Header
+    - Featured at the top of the page, the header shows the name of the game.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+![Header](assets/images/header.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+* The game score field
+    - The game score field shows the user the score or how many times did the user or the computer win the game
 
-`http_server`
+![Score field](assets/images/score.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* Selected and result announcement
+    - This announcement shows the user which option did both sides choose and the result.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+![Selected and result](assets/images/Result.png)
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* The Game options
+    - The graphics of Rock, Paper and Scissors are active divs, that the user can click to make their choice and play the game.
 
-To log into the Heroku toolbelt CLI:
+![Options](assets/images/options.png)
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Testing
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- I tested that the website works on different browsers.
+- I confirmed that the game results are always correct.
+- I confirmed that the application is readable and easy to understand.
+- I confirmed that the colours and fonts are easy to read and accessible by running the app through lighthouse in devtools.
 
----
+![Lighthouse results](assets/images/lighthouse.png)
 
-Happy coding!
+### Bugs
+* Found and fixed the following mistakes:
+    - ![CSS mistake](assets/images/css_mistake.png)
+
+    - ![JS mistake](assets/images/js_mistake.png)
+
+
+
+### Validator Testing
+
+#### HTML
+
+No errors were returned when passing through the official W3C validator.
+
+![HTML Validator](assets/images/html_validator.png)
+
+#### CSS
+
+No errors were found when passing through the official (Jigsaw) validator.
+
+![CSS Validator](assets/images/css_validator.png)
+
+### Lighthouse
+The choosen colours and fontare easy to read and accessible by running it through Lighthouse in Devtools 
+![Lighthouse report](assets/images/lighthouse.png)
+
+### Unfixed Bugs
+
+No unfixed bugs were found.
+
+## Deployment
+
+The site was deployed to GitHub Pages using the following steps:
+
+1. In the GitHub repository, navigate to the Settings tab.
+2. From the source section drop-down menu, select the Master Branch.
+3. Once the master branch is selected, the page will automatically refresh, indicating successful deployment.
+
+The live link can be found here: [RPS_Game](https://desislavanaydenova.github.io/RPS_Game/)
+
+## Credits
+
+### Content
+
+- The [Love Maths](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/234519d86b76411aa181e76a55dabe70/) project tutorials wee used to develop this site.
+- Design and developing technicks are taken by [YouTube](https://www.youtube.com/watch?v=jaVNP3nIAv0)
+### Media
+
+- The graphics are from [Pinterest](https://www.pinterest.de/).
