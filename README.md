@@ -2,7 +2,7 @@
 
 Rock Paper Scissors is a game, that almost everybody knows. This aplication lets the user play the game agains the computer. It gives the user tha chance to choose between the three possibilities and implements this choice with the one of the computer. It's totally a game of luck.
 
-![Screenshot overview](assets/images/screenshot_generator.png)
+![Screenshot overview](assets/images/responsive.png)
 
 ## Features
 
@@ -17,17 +17,29 @@ Rock Paper Scissors is a game, that almost everybody knows. This aplication lets
 * The game score field
     - The game score field shows the user the score or how many times did the user or the computer win the game
 
-![Score field](assets/images/score.png)
+![Score field](assets/images/score_field.png)
 
-* Selected and result announcement
-    - This announcement shows the user which option did both sides choose and the result.
+* The Choices field
+    - This announcement shows the user which option did both sides choose.
 
-![Selected and result](assets/images/Result.png)
+![Choices](assets/images/choices.png)
 
-* The Game options
-    - The graphics of Rock, Paper and Scissors are active divs, that the user can click to make their choice and play the game.
+* The Choice Buttons
+    - The buttons for Rock, Paper and Scissors are active buttons, that the user can click to make their choice and play the game.
 
-![Options](assets/images/options.png)
+![Buttons](assets/images/buttons.png)
+
+* The Result announcement
+    - Shows the player what did both sides choose , who beats who, and if there is a winner or it is a tie.
+    - The game ends when one of the players reaches 20 pints. The score changes to 0:0 and the player can decide if he wants to play again.
+
+![Result1](assets/images/res1.png)
+
+![Result2](assets/images/res2.png)
+    
+
+![Result End](assets/images/res_end.png)
+
 
 ## Testing
 
@@ -50,15 +62,24 @@ Rock Paper Scissors is a game, that almost everybody knows. This aplication lets
 
 #### HTML
 
-No errors were returned when passing through the official W3C validator.
+Got warning when passing through the official W3C validator, that the use of sections wasn't appropriate due to lack of headings. So all the sections were changed to div.
 
 ![HTML Validator](assets/images/html_validator.png)
 
 #### CSS
 
-No errors were found when passing through the official (Jigsaw) validator.
+No errors were found when passing through the official (W3C) validator.
 
 ![CSS Validator](assets/images/css_validator.png)
+
+#### JSHint
+
+JSHint was throwing up some warnings that were irrelevant, most of which I fixed. For example: 
+
+8. Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (userInput, button, getComputerMove, compareMoves, changeImg)
+13.	Missing semicolon.
+15.	Unnecessary semicolon.
+20.	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 
 ### Lighthouse
 The choosen colours and fontare easy to read and accessible by running it through Lighthouse in Devtools 
@@ -76,7 +97,7 @@ The site was deployed to GitHub Pages using the following steps:
 2. From the source section drop-down menu, select the Master Branch.
 3. Once the master branch is selected, the page will automatically refresh, indicating successful deployment.
 
-The live link can be found here: [RPS_Game](https://desislavanaydenova.github.io/RPS_Game/)
+The live link can be found here: [RPS_Game.01](https://desislavanaydenova.github.io/RPS_Game.01/)
 
 ## Credits
 

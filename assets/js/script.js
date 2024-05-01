@@ -10,9 +10,9 @@ function getUserInput() {
             let computerMove = getComputerMove();
             compareMoves(userInput, computerMove);
             changeImg(userInput, computerMove);
-        })
+        });
     }
- };
+ }
 
 
 // Function to get computer move
@@ -21,7 +21,7 @@ function getComputerMove() {
     let randomChoice = Math.floor(Math.random()*3);
     let computerMove = computerOptions[randomChoice];
     return computerMove;
-};
+}
 
 
 // Function to compare
@@ -60,7 +60,7 @@ function compareMoves(userInput, computerMove) {
     }
     incrementScore(winner.textContent);
     return action;    
-  };
+  }
 
 
 // Increment scor depending on the winner
@@ -76,10 +76,10 @@ function incrementScore(winner) {
     }else if (winner === "Computer wins!"){
         cScore.textContent = parseInt(cScore.textContent) +1;
         if ( cScore.textContent >= 20){
-            checkGameEnd("Computer")
+            checkGameEnd("Computer");
         }
-    };
-};
+    }
+}
 
 // Cahnges the images to show the player's and computer's choice better to the user
 // Credit https://github.com/developedbyed/rock-paper-scissor/blob/master/app.js
