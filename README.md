@@ -106,3 +106,4 @@ The live link can be found here: [RPS_Game.01](https://desislavanaydenova.github
 ### Media
 
 - The graphics are from [GitHub , developedbyed](https://github.com/developedbyed/rock-paper-scissor/tree/master/assets).
+- Favicon from [Icons8.com](https://icons8.com/icons/set/favicon)
