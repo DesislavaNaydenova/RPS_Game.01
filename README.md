@@ -100,8 +100,8 @@ The live link can be found here: [RPS_Game.01](https://desislavanaydenova.github
 ### Content
 
 - The [Love Maths](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/234519d86b76411aa181e76a55dabe70/) project tutorials wee used to develop this site.
-- Some ideas are taken by [YouTube freeCodeCamp](https://www.youtube.com/watch?v=jaVNP3nIAv0)
-- Some ideas are taken by [YouTube developedbyed](https://www.youtube.com/watch?v=jaVNP3nIAv0)
+- The look of the score field is inspired by [YouTube freeCodeCamp](https://www.youtube.com/watch?v=jaVNP3nIAv0)
+- The changing hands are taken by [YouTube developedbyed](https://www.youtube.com/watch?v=qWPtKtYEsN4)
 
 ### Media
 
