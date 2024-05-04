@@ -83,7 +83,8 @@ The choosen colours and fontare easy to read and accessible by running it throug
 
 ### Unfixed Bugs
 
-No unfixed bugs were found.
+There was an error in the console, because the compareMoves function was called a second time et the and of the code. The bug was fixed by deleting the seccond call of the function. 
+![Console error](assets/images/error_js.png)
 
 ## Deployment
 

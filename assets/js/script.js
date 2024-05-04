@@ -100,6 +100,6 @@ function checkGameEnd(winner) {
 
 getUserInput();
 getComputerMove();
-compareMoves();
+
 
   
