@@ -98,8 +98,11 @@ function checkGameEnd(winner) {
     document.getElementById("computer-score").textContent = "0";
 }
 
-getUserInput();
-getComputerMove();
+document.addEventListener("DOMContentLoaded", (event) => {
+    getUserInput();
+    getComputerMove();
+  });
+
 
 
   
