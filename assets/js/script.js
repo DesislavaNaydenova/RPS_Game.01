@@ -1,5 +1,4 @@
-
-
+/*jshint esversion: 6 */
 // Function to get user input
 function getUserInput() {
     let userInput = "";
